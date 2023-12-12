@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 onclick="animateHeader()">My Book Library</h1>
+
+<div id="book-list">
+    <!-- Books will be displayed here -->
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+    <span onclick="toggleModal()" style="cursor: pointer; float: right;">&times;</span>
+    <label for="title">Title:</label>
+    <input type="text" id="title" placeholder="Enter title">
+
+    <label for="author">Author:</label>
+    <input type="text" id="author" placeholder="Enter author">
+
+    <label for="pages">Pages:</label>
+    <input type="number" id="pages" placeholder="Enter number of pages">
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="read">
+        <label for="read">Read</label>
+    </div>
+
+    <button onclick="addBookToLibrary()">Add Book</button>
+</div>
+
+<button onclick="toggleModal()">Add Book</button>
+
+<script src="source.js"></script>
+
+</body>
+</html>
